@@ -28,11 +28,11 @@ export default {
 
 <template>
   <div class="addresses-index">
-    <!-- <h1>All Addresses</h1> -->
+    <h1>All Addresses</h1>
     <div v-for="address in addresses" v-bind:key="address.id">
       <h2>{{ address.name }}</h2>
-      <p>City: {{ address.city }}</p>
-      <p>State: {{ address.state }}</p>
+      <!-- <p>City: {{ address.city }}</p>
+      <p>State: {{ address.state }}</p> -->
     </div>
   </div>
 </template>

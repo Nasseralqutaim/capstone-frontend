@@ -30,8 +30,8 @@ export default {
 <template>
   <div class="home">
     <h2>Title: {{ address.title }}</h2>
-    <p>City: {{ address.city }}</p>
-    <p>State: {{ address.state }}</p>
+    <!-- <p>City: {{ address.city }}</p>
+    <p>State: {{ address.state }}</p> -->
 
     <div v-if="address.owner">
       <a v-bind:href="`/addresses/${address.id}/edit`">Edit address</a>
