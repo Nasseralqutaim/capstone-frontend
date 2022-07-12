@@ -41,6 +41,5 @@ export default {
   <div class="artifacts-index">
     <h1>All artifacts</h1>
     <div v-for="artifact in artifacts" v-bind:key="artifact.id"></div>
-    <router-link v-bind:to="`/photos/${photo.id}`">More details</router-link>
   </div>
 </template>

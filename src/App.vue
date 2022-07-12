@@ -18,7 +18,7 @@ export default {
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">OnePage</a></h1>
+      <h1 class="logo"><a href="index.html">Connect to the past</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -29,7 +29,7 @@ export default {
           <li><a class="nav-link scrollto" href="/singup">Singup</a></li>
           <li><a class="nav-link scrollto o" href="/login">login</a></li>
           <li><a class="nav-link scrollto" href="/addresses">addresses</a></li>
-          <li><a class="nav-link scrollto" href="historical_events">Historical_events</a></li>
+          <li><a class="nav-link scrollto" href="historical events">Historical events</a></li>
           <li class="dropdown">
             <a href="#">
               <span>Drop Down</span>
@@ -73,7 +73,7 @@ export default {
   <br />
   <br />
   <nav>
-    <router-link to="/">Home</router-link>
+    <!-- <router-link to="/">Home</router-link>
     |
     <router-link to="/about">Add Historical events</router-link>
     |
@@ -83,7 +83,7 @@ export default {
     |
     <router-link v-if="isLoggedIn" to="/logout">Logout</router-link>
     |
-    <router-link to="/addresses">All addresses</router-link>
+    <router-link to="/addresses">All cities</router-link> -->
   </nav>
 
   <router-view />
@@ -94,7 +94,7 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>OnePage</h3>
+            <h3>Capstone</h3>
             <p>
               A108 Adam Street
               <br />
@@ -138,35 +138,9 @@ export default {
             </ul>
           </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Design</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Web Development</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Product Management</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Marketing</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Graphic Design</a>
-              </li>
-            </ul>
-          </div>
-
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Subscribe for more features</h4>
+            <p>Click Subscribe to acess the most recent features</p>
             <form action="" method="post">
               <input type="email" name="email" />
               <input type="submit" value="Subscribe" />
@@ -207,6 +181,9 @@ export default {
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
   </a>
+
+  <!-- gallery in About page -->
+  <SimpleGallery galleryID="my-test-gallery" :images="images" />
 </template>
 
 <style>

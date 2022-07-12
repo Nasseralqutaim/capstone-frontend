@@ -28,8 +28,10 @@ export default {
 
 <template>
   <div class="addresses-index">
-    <h1>All Addresses</h1>
-    <div class="mb-3">
+    <div class="section-title">
+      <h2>All cities</h2>
+    </div>
+    <div class="mb-5">
       Fiter by City:
       <input v-model="cityFilter" type="text" />
     </div>
