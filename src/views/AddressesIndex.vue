@@ -4,7 +4,7 @@ export default {
   data: function () {
     return {
       addresses: [],
-      titleFilter: "",
+      cityFilter: "",
     };
   },
   created: function () {
@@ -12,14 +12,14 @@ export default {
   },
   methods: {
     indexAddresses: function () {
-      axios.get("/addresses").then((response) => {
+      axios.get("/addresses.json").then((response) => {
         console.log("addresses index", response);
         this.addresses = response.data;
       });
     },
     filterAddresses: function () {
       return this.addresses.filter((address) => {
-        return address.title.toLowerCase().includes(this.titleFilter.toLowerCase());
+        return address.city.toLowerCase().includes(this.cityFilter.toLowerCase());
       });
     },
   },
@@ -29,10 +29,15 @@ export default {
 <template>
   <div class="addresses-index">
     <h1>All Addresses</h1>
-    <div v-for="address in addresses" v-bind:key="address.id">
-      <h2>{{ address.name }}</h2>
-      <!-- <p>City: {{ address.city }}</p>
-      <p>State: {{ address.state }}</p> -->
+    <div class="mb-3">
+      Fiter by City:
+      <input v-model="cityFilter" type="text" />
+    </div>
+    <div v-for="address in filterAddresses()" v-bind:key="address.id" class="col">
+      <p>City: {{ address.city }}</p>
+      <p>State: {{ address.state }}</p>
+
+      <router-link v-bind:to="`/addresses/${address.id}`">More details</router-link>
     </div>
   </div>
 </template>

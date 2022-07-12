@@ -4,7 +4,7 @@ import axios from "axios";
 export default {
   data: function () {
     return {
-      message: "Welcome to Nasser Capstone!",
+      message: "Welcome to Nasser's Capstone",
       address_users: [],
       newAddress_userParams: {},
     };
@@ -30,10 +30,6 @@ export default {
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    user_id:
-    <input type="text" v-model="newAddress_userParams.user_id" />
-    address_id:
-    <input type="text" v-model="newAddress_userParams.address_id" />
   </div>
 </template>
 

@@ -2,10 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
 import UsersShow from "../views/UsersShow.vue";
 import AddressesShow from "../views/AddressesShow.vue";
 import AddressesIndex from "../views/AddressesIndex.vue";
-import LogoutView from "../views/LogoutView.vue";
+import ArtifactsIndex from "../views/ArtifactsIndex.vue";
+import ArtifactsShow from "../views/ArtifactsShow.vue";
+
 const routes = [
   {
     path: "/",
@@ -32,6 +35,8 @@ const routes = [
   { path: "/users/:id", name: "users-show", component: UsersShow },
   { path: "/addresses/:id", name: "addresses-show", component: AddressesShow },
   { path: "/addresses", name: "addresses-index", component: AddressesIndex },
+  { path: "/artifacts", name: "artifacts-index", component: ArtifactsIndex },
+  { path: "/artifacts/:id", name: "artifacts-show", component: ArtifactsShow },
 ];
 
 const router = createRouter({

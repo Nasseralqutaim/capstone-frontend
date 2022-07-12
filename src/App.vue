@@ -18,15 +18,15 @@ export default {
   <nav>
     <router-link to="/">Home</router-link>
     |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">Add Historical events</router-link>
     |
     <router-link v-if="!isLoggedIn" to="/signup">Signup</router-link>
     |
     <router-link v-if="!isLoggedIn" to="/login">Login</router-link>
     |
-    <router-link to="/addresses">All addresses</router-link>
-    |
     <router-link v-if="isLoggedIn" to="/logout">Logout</router-link>
+    |
+    <router-link to="/addresses">All addresses</router-link>
   </nav>
   <router-view />
 </template>
