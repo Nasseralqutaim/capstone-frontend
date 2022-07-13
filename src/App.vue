@@ -26,8 +26,8 @@ export default {
         <ul>
           <li><a class="nav-link scrollto active" href="/hero">Home</a></li>
           <li><a class="nav-link scrollto" href="/about">About</a></li>
-          <li><a class="nav-link scrollto" href="/singup">Singup</a></li>
-          <li><a class="nav-link scrollto o" href="/login">login</a></li>
+          <li><a class="nav-link scrollto" href="/signup">signup</a></li>
+          <li><a class="nav-link scrollto" href="/login">login</a></li>
           <li><a class="nav-link scrollto" href="/addresses">Find a city</a></li>
           <li><a class="nav-link scrollto" href="historical events">Historical events</a></li>
           <li class="dropdown">
@@ -68,10 +68,7 @@ export default {
   <br />
   <br />
   <br />
-  <br />
-  <br />
-  <br />
-  <br />
+
   <nav>
     <!-- <router-link to="/">Home</router-link>
     |
@@ -123,13 +120,6 @@ export default {
           <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
     </div>
   </footer>
   <!-- End Footer -->
@@ -144,6 +134,9 @@ export default {
 </template>
 
 <style>
+body {
+  background-image: url("./assets/triangle_mosaic.png");
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -154,7 +147,7 @@ export default {
 
 nav {
   padding: 5px;
-  border: 5px;
+  border: 5;
   margin: 5;
 }
 
