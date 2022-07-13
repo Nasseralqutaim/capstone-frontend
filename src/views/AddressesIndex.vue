@@ -31,8 +31,9 @@ export default {
     <div class="section-title">
       <h2>All cities</h2>
     </div>
+
     <div class="mb-5">
-      Fiter by City:
+      Find a city:
       <input v-model="cityFilter" type="text" />
     </div>
     <div v-for="address in filterAddresses()" v-bind:key="address.id" class="col">
@@ -43,3 +44,5 @@ export default {
     </div>
   </div>
 </template>
+
+<style></style>

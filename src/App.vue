@@ -28,11 +28,11 @@ export default {
           <li><a class="nav-link scrollto" href="/about">About</a></li>
           <li><a class="nav-link scrollto" href="/singup">Singup</a></li>
           <li><a class="nav-link scrollto o" href="/login">login</a></li>
-          <li><a class="nav-link scrollto" href="/addresses">addresses</a></li>
+          <li><a class="nav-link scrollto" href="/addresses">Find a city</a></li>
           <li><a class="nav-link scrollto" href="historical events">Historical events</a></li>
           <li class="dropdown">
             <a href="#">
-              <span>Drop Down</span>
+              <span>More Features</span>
               <i class="bi bi-chevron-down"></i>
             </a>
             <ul>
@@ -93,54 +93,11 @@ export default {
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Capstone</h3>
-            <p>
-              A108 Adam Street
-              <br />
-              New York, NY 535022
-              <br />
-              United States
-              <br />
-              <br />
-              <strong>Phone:</strong>
-              +1 5589 55488 55
-              <br />
-              <strong>Email:</strong>
-              info@example.com
-              <br />
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Terms of service</a>
-              </li>
-              <li>
-                <i class="bx bx-chevron-right"></i>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
+          <div class="col-lg-3 col-md-6 footer-contact"></div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Subscribe for more features</h4>
-            <p>Click Subscribe to acess the most recent features</p>
+            <h4>This project is yet to have more uniqe features</h4>
+            <p>Add your email below to access the recent ones!</p>
             <form action="" method="post">
               <input type="email" name="email" />
               <input type="submit" value="Subscribe" />
@@ -196,7 +153,9 @@ export default {
 }
 
 nav {
-  padding: 30px;
+  padding: 5px;
+  border: 5px;
+  margin: 5;
 }
 
 nav a {
